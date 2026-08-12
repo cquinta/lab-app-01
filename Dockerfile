@@ -7,7 +7,7 @@ COPY . .
 RUN pip install -r requirements.txt
 RUN chown -R appuser:appuser /app
 USER appuser
-ENV VERSION=1.0
+ENV VERSION=3.0
 EXPOSE 8000
 HEALTHCHECK --interval=30s --timeout=3s \
   CMD curl -f http://localhost:8000/health || exit 1
