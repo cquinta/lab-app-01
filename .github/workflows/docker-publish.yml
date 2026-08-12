@@ -22,4 +22,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/app-infnet-01:${{ github.sha }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/app-infnet-01:${{ github.run.id }}
+          
