@@ -9,6 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checar o código do repositório
+        uses: actions/checkout@v4
+        
       - name: Fazer login no Docker Hub
         uses: docker/login-action@v3
         with:
